@@ -1,1 +1,195 @@
-Hello World
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Currículum</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Cabecera */
+        header {
+            background-color: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 1.5em 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+        }
+
+        /* Sección principal */
+        section {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #2C3E50;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            color: #34495E;
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+
+        /* Sección de información personal */
+        .info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 25px;
+            gap: 20px;
+        }
+
+        .info div {
+            flex: 1;
+            padding: 15px;
+            background-color: #ecf0f1;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .info div:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .info h3 {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .info p {
+            font-size: 1em;
+            color: #7f8c8d;
+        }
+
+        /* Imagen de perfil */
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #2C3E50;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsividad */
+        @media screen and (max-width: 768px) {
+            .info {
+                flex-direction: column;
+            }
+
+            .info div {
+                margin-bottom: 20px;
+            }
+
+            .profile-pic {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        /* Listas */
+        ul {
+            margin: 0;
+            padding-left: 20px;
+            color: #7f8c8d;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+            font-size: 1em;
+        }
+
+        /* Estilo de los enlaces */
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mi Currículum</h1>
+    </header>
+
+    <section>
+        <div style="text-align: center;">
+            <img class="profile-pic" src="https://w7.pngwing.com/pngs/178/595/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png" alt="Foto de perfil">
+        </div>
+    </section>
+
+    <section>
+        <h2>Datos Personales</h2>
+        <div class="info">
+            <div>
+                <h3>Nombre</h3>
+                <p>Tu Nombre</p>
+            </div>
+            <div>
+                <h3>Correo Electrónico</h3>
+                <p>tucorreo@gmail.com</p>
+            </div>
+            <div>
+                <h3>Teléfono</h3>
+                <p>(123) 456-7890</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Experiencia Laboral</h2>
+        <div>
+            <h3>Desarrollador Web</h3>
+            <p>Empresa ABC - Ciudad, País | Fecha de inicio - Fecha de fin</p>
+            <ul>
+                <li>Desarrollo de aplicaciones web...</li>
+                <li>Colaboración en equipo ágil...</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Otro Trabajo</h3>
+            <p>Otra Empresa - Ciudad, País | Fecha de inicio - Fecha de fin</p>
+            <ul>
+                <li>Desarrollo de software...</li>
+                <li>Mejora de la experiencia de usuario...</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Educación</h2>
+        <div>
+            <h3>Grado Universitario</h3>
+            <p>Nombre de la Universidad - Ciudad, País | Fecha de inicio - Fecha de fin</p>
+            <p>Título obtenido y especialización (si aplica)</p>
+        </div>
+    </section>
+</body>
+</html>
+
